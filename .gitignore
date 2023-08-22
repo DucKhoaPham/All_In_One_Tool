@@ -1,0 +1,21 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/All_In_One_Tool/obj
+/BarcodeLib
+/BarcodePrint
+/CommonLibrary/bin/Debug/netcoreapp3.1
+/All_In_One_Tool/.vs/All_In_One_Tool/DesignTimeBuild
+/WorkerService/bin
+/WorkerService/Config/appsettings.Development.json
+/WorkerService/Config/awsS3setting.Development.json
+/WorkerService/obj/Debug/netcoreapp3.1
+/WorkerService/obj/Release/netcoreapp3.1
+/WorkerService/obj
+/CommonLibrary/obj/Debug/netcoreapp3.1
+/CommonLibrary/obj/Release/netcoreapp3.1
+/CommonLibrary/obj
+/WorkerScanFile/.vs/WorkerService/DesignTimeBuild
+/All_In_One_Tool/.vs/All_In_One_Tool/v16
+/.vs
