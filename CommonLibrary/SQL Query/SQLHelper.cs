@@ -25,14 +25,14 @@ namespace CommonLibrary.SQL_Query
                     string query = String.Format(@"SELECT STUFF(
                     (SELECT ', ' + ValueColumn
                      FROM (
-                         SELECT COLUMN_NAME AS ValueColumn,DATA_TYPE,CHARACTER_MAXIMUM_LENGTH
+                         SELECT COLUMN_NAME AS ValueColumn,DATA_TYPE,CHARACTER_MAXIMUM_LENGTH,ORDINAL_POSITION
                          FROM INFORMATION_SCHEMA.COLUMNS
                          WHERE TABLE_NAME = '{0}' AND TABLE_SCHEMA = 'dbo'
                          INTERSECT
-                         SELECT COLUMN_NAME,DATA_TYPE,CHARACTER_MAXIMUM_LENGTH
+                         SELECT COLUMN_NAME,DATA_TYPE,CHARACTER_MAXIMUM_LENGTH,ORDINAL_POSITION
                          FROM INFORMATION_SCHEMA.COLUMNS
                          WHERE TABLE_NAME = '{1}' AND TABLE_SCHEMA = 'dbo'
-                     ) AS CommonColumns
+                     ) AS CommonColumns order by ORDINAL_POSITION
                      FOR XML PATH(''), TYPE).value('.', 'NVARCHAR(MAX)'),
                      1, 2, '') AS All_Columns", table1, table2);
                     connection.Open();
