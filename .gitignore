@@ -19,3 +19,6 @@
 /WorkerScanFile/.vs/WorkerService/DesignTimeBuild
 /All_In_One_Tool/.vs/All_In_One_Tool/v16
 /.vs
+/QrCodePrint/bin/Debug/netcoreapp3.1
+/QrCodePrint/obj/Debug/netcoreapp3.1
+/QrCodePrint/obj

@@ -9,10 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLibrary", "..\CommonL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarcodeLib", "..\BarcodeLib\BarcodeLib.csproj", "{362AC318-FD65-45CC-BD80-0F6E49EEFD6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodePrint", "..\BarcodePrint\BarcodePrint.csproj", "{64561DD9-457C-48D5-B807-CDFBC3F4F255}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarcodePrint", "..\BarcodePrint\BarcodePrint.csproj", "{64561DD9-457C-48D5-B807-CDFBC3F4F255}"
 	ProjectSection(ProjectDependencies) = postProject
 		{362AC318-FD65-45CC-BD80-0F6E49EEFD6A} = {362AC318-FD65-45CC-BD80-0F6E49EEFD6A}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QrCodePrint", "..\QrCodePrint\QrCodePrint.csproj", "{70067519-AD62-4358-9324-66F37C134D76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +38,10 @@ Global
 		{64561DD9-457C-48D5-B807-CDFBC3F4F255}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64561DD9-457C-48D5-B807-CDFBC3F4F255}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64561DD9-457C-48D5-B807-CDFBC3F4F255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70067519-AD62-4358-9324-66F37C134D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70067519-AD62-4358-9324-66F37C134D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70067519-AD62-4358-9324-66F37C134D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70067519-AD62-4358-9324-66F37C134D76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
