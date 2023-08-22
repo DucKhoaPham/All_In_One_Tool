@@ -25,11 +25,11 @@ namespace CommonLibrary.SQL_Query
                     string query = String.Format(@"SELECT STUFF(
                     (SELECT ', ' + ValueColumn
                      FROM (
-                         SELECT COLUMN_NAME AS ValueColumn
+                         SELECT COLUMN_NAME AS ValueColumn,DATA_TYPE,CHARACTER_MAXIMUM_LENGTH
                          FROM INFORMATION_SCHEMA.COLUMNS
                          WHERE TABLE_NAME = '{0}' AND TABLE_SCHEMA = 'dbo'
                          INTERSECT
-                         SELECT COLUMN_NAME
+                         SELECT COLUMN_NAME,DATA_TYPE,CHARACTER_MAXIMUM_LENGTH
                          FROM INFORMATION_SCHEMA.COLUMNS
                          WHERE TABLE_NAME = '{1}' AND TABLE_SCHEMA = 'dbo'
                      ) AS CommonColumns
